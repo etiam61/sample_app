@@ -1,0 +1,15 @@
+vi:
+  home:
+    title: "Trang chủ"
+    heading: "Ứng dụng đơn giản"
+    before_tutorial: "Đây là trang chủ của"
+    tutorial: "Khóa học Ruby on Rails"
+    after_tutorial: "ứng dụng đơn giản"
+  help:
+    title: "Giúp đỡ"
+    heading: "Giúp đỡ"
+    before_page_link: "Nhận sự giúp đỡ của khóa học Ruby on Rails từ"
+    page_link: "trang giúp đỡ Rails Tutorial"
+    before_book_link: "Để thao khảo lời giải, truy cập"
+    book_link: "Sách Ruby on Rails Tutorial."
+  title: "Khóa học Ruby on Rails Ứng dụng đơn giản"
