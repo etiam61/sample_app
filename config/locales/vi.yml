@@ -1,15 +1,45 @@
 vi:
-  home:
-    title: "Trang chủ"
-    heading: "Ứng dụng đơn giản"
-    before_tutorial: "Đây là trang chủ của"
-    tutorial: "Khóa học Ruby on Rails"
-    after_tutorial: "ứng dụng đơn giản"
-  help:
-    title: "Giúp đỡ"
-    heading: "Giúp đỡ"
-    before_page_link: "Nhận sự giúp đỡ của khóa học Ruby on Rails từ"
-    page_link: "trang giúp đỡ Rails Tutorial"
-    before_book_link: "Để thao khảo lời giải, truy cập"
-    book_link: "Sách Ruby on Rails Tutorial."
-  title: "Khóa học Ruby on Rails Ứng dụng đơn giản"
+  static_pages:
+    home:
+      title: "Trang chủ"
+      heading: "Ứng dụng đơn giản"
+      before_tutorial: "Đây là trang chủ của"
+      tutorial: "Khóa học Ruby on Rails"
+      after_tutorial: "ứng dụng đơn giản"
+    help:
+      title: "Giúp đỡ"
+      heading: "Giúp đỡ"
+      before_page_link: "Nhận sự giúp đỡ của khóa học Ruby on Rails từ"
+      page_link: "trang giúp đỡ Rails Tutorial"
+      before_book_link: "Để thao khảo lời giải, truy cập"
+      book_link: "Sách Ruby on Rails Tutorial."
+    contact:
+      page_title: "Liên hệ"
+      heading: "Liên hệ"
+      intro: "Liên hệ với Ruby on Rails Tutorial để trao đổi về sample app tại"
+      title: "trang liên hệ"
+    about:
+      page_title: "Tìm hiẻu"
+      heading: "Tìm hiểu"
+      intro: "Tìm hiểu về sample app tại"
+      title: "trang tìm hiểu"
+  layouts:
+    application:
+      title: "Ruby on Rails Tutorial Sample App"
+    header:
+      logo: "sample app"
+    footer:
+      the: ""
+      rails_name: "Ruby on Rails Tutorial" 
+      by: "Bởi"
+      rails_author: "Michael Hartl"
+      news: "Tin tức"
+      about: "Tìm hiểu"
+      contact: "Liên lạc"
+  users:
+    new:
+      page_title: "Sign up"
+      heading: "Sign up"
+      intro: "This will be a sign up page for new users."
+    login:
+      title: "Đăng nhập"

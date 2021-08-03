@@ -1,0 +1,13 @@
+<footer class="footer">
+  <div class="book-intro">
+    <%= t ".the" %> <%= link_to t(".rails_name"), Settings.rails_home_link %> 
+    <%= t ".by" %> <%= link_to t(".rails_author"), Settings.rails_author_link %>
+  </div>
+  <nav>
+    <ul class="list-item">
+      <li><%= link_to t(".about"), about_path %></li>
+      <li><%= link_to t(".contact"), contact_path %></li>
+      <li><%= link_to t(".news"), Settings.rails_news_link %></li>
+    </ul>
+  </nav>
+</footer>

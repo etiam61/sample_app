@@ -43,3 +43,5 @@ yarn-debug.log*
 .editorconfig
 config/database.yml
 /Gemfile.lock
+/app/assets/images
+/test
