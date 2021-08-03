@@ -6,6 +6,7 @@ vi:
       before_tutorial: "Đây là trang chủ của"
       tutorial: "Khóa học Ruby on Rails"
       after_tutorial: "ứng dụng đơn giản"
+      sing_up: "Sign Up"
     help:
       title: "Giúp đỡ"
       heading: "Giúp đỡ"
@@ -41,5 +42,18 @@ vi:
       page_title: "Sign up"
       heading: "Sign up"
       intro: "This will be a sign up page for new users."
+      label:
+        name: "Tên"
+        email: "Email"
+        password: "Mật khẩu"
+        comfirmation: "Xác nhận"
+      button:
+        submit: "Tạo tài khoản"
     login:
       title: "Đăng nhập"
+    helper:
+      gravatar_link: "https://secure.gravatar.com/avatar/%{gravatar_id}.jpg"
+  messsage:
+    not_found: "Not found"
+    user_create_success: "Create user success"
+    user_create_faild: "Create user failed"

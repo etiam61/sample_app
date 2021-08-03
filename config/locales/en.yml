@@ -70,5 +70,14 @@ en:
       page_title: "Sign up"
       heading: "Sign up"
       intro: "This will be a sign up page for new users."
+      label:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        comfirmation: "Confirmation"
+      button:
+        submit: "Create my account"
     login:
       title: "Login"
+    helper:
+      gravatar_link: "https://secure.gravatar.com/avatar/%{gravatar_id}.jpg"
