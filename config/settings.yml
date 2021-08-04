@@ -5,3 +5,15 @@ logo_link: "rails.png"
 ruby_on_rails_link: "https://rubyonrails.org/"
 about_link: "https://www.railstutorial.org/book"
 contact_link: "https://www.railstutorial.org/book"
+model:
+  user:
+    name:
+      length: 
+        maximum: 50
+    email:
+      length:
+        maximum: 255
+      regex_valid: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+    password:
+      length:
+        minimum: 6
