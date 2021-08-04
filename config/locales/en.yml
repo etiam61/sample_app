@@ -95,6 +95,7 @@ en:
       login: "Đăng nhập"
     heading: "Đăng nhập"
     title: "Đăng nhập"
+    remember_text: "Remember me"
     message:
       login_failed: "Invalid email/password combination"
       login_success: "Welcome to the Sample App"
