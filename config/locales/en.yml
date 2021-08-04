@@ -79,5 +79,22 @@ en:
         submit: "Create my account"
     login:
       title: "Login"
+    logout:
+      title: "Logout"
+    profile:
+      title: "Profile"
+    settings:
+      title: "Settings"
     helper:
       gravatar_link: "https://secure.gravatar.com/avatar/%{gravatar_id}.jpg"
+  sessions:
+    label:
+      email: "Email"
+      password: "Mật khẩu"
+    button:
+      login: "Đăng nhập"
+    heading: "Đăng nhập"
+    title: "Đăng nhập"
+    message:
+      login_failed: "Invalid email/password combination"
+      login_success: "Welcome to the Sample App"
