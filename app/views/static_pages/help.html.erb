@@ -1,11 +1,10 @@
-<% provide :title, t("help.title") %>
+<% provide :title, t(".title") %>
 <h1>
-  <%= t("help.heading") %>
+  <%= t ".heading" %>
 </h1>
 <p>
-  <%= t("help.before_page_link") %>
-  <%= link_to t("help.page_link"), Settings.help_link %>.
-  <%= t("help.before_book_link") %>
-  <%= link_to t("help.book_link"), Settings.book_link %>.
-</a>
+  <%= t ".before_page_link" %>
+  <%= link_to t(".page_link"), Settings.help_link %>.
+  <%= t ".before_book_link" %>
+  <%= link_to t(".book_link"), Settings.book_link %>.
 </p>

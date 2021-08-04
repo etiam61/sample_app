@@ -1,0 +1,18 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div id="logo">
+    <%= link_to t(".logo"), "#" %>
+  </div>
+  <nav>
+    <ul class="nav navbar-nav navbar-right nav-list">
+      <li class="nav-item">
+        <%= link_to t("static_pages.home.title"), root_path %>
+      </li>
+      <li class="nav-item">
+        <%= link_to t("static_pages.help.title"), help_path %>
+      </li>
+      <li class="nav-item">
+        <%= link_to t("users.login.title"), "#" %>
+      </li>
+    </ul>
+  </nav>
+</header>

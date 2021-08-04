@@ -30,17 +30,45 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  home:
-    title: "Home"
-    heading: "Simple App"
-    before_tutorial: "This is the home page for the"
-    tutorial: "Ruby on Rails Tutorial"
-    after_tutorial: "sample application"
-  help:
-    title: "Help"
-    heading: "Help"
-    before_page_link: "Get help on the Ruby on Rails Tutorial at the"
-    page_link: "Rails Tutorial help page"
-    before_book_link: "To get help on this sample app, see the"
-    book_link: "Ruby on Rails Tutorial book."
-  title: "Ruby on Rails Tutorial Sample App"
+  static_pages:
+    home:
+      title: "Home"
+      heading: "Simple App"
+      before_tutorial: "This is the home page for the"
+      tutorial: "Ruby on Rails Tutorial"
+      after_tutorial: "sample application"
+    help:
+      title: "Help"
+      heading: "Help"
+      before_page_link: "Get help on the Ruby on Rails Tutorial at the"
+      page_link: "Rails Tutorial help page"
+      before_book_link: "To get help on this sample app, see the"
+      book_link: "Ruby on Rails Tutorial book."
+    contact:
+      heading: "Contact"
+      intro: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      title: "contact page"
+    about:
+      heading: "About"
+      intro: "About the sample app at the"
+      title: "about page"
+  layouts:
+    application:
+      title: "Ruby on Rails Tutorial Sample App"
+    header:
+      logo: "sample app"
+    footer:
+      the: "The"
+      rails_name: "Ruby on Rails Tutorial" 
+      by: "by"
+      rails_author: "Michael Hartl"
+      news: "News"
+      about: "About"
+      contact: "Contact"
+  users:
+    new:
+      page_title: "Sign up"
+      heading: "Sign up"
+      intro: "This will be a sign up page for new users."
+    login:
+      title: "Login"
