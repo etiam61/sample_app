@@ -1,0 +1,8 @@
+<% provide :title, t(".page_title") %>
+
+<ul class = "users">
+  <h1><%= t ".heading" %></h1>
+  <%= render @users %>
+</ul>
+
+<%= paginate @users %>

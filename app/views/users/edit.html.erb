@@ -1,0 +1,9 @@
+<% provide :title, t(".page_title") %>
+<% provide :submit_btn, t(".button.submit") %>
+
+<div class="page page__users-new">
+  <h1><%= t ".heading" %></h1>
+  <p><%= t ".intro" %></p>
+  <%= render "users/form" %>
+  <%= gravatar_for @user %>
+</div>

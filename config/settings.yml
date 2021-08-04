@@ -17,3 +17,8 @@ model:
     password:
       length:
         minimum: 6
+max_item_per_page: 30
+image:
+  avatar_size: 50
+pagination:
+  per: 30
