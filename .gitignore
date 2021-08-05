@@ -45,3 +45,6 @@ config/database.yml
 /Gemfile.lock
 /app/assets/images
 /test
+
+# Ignore application configuration
+/config/application.yml

@@ -120,5 +120,16 @@ en:
     update_failed: "Edit failed"
     update_success: "Edit ok"
     login_required: "Please login"
+    not_active: "Not active"
     delete_success: "Delete success"
     delete_success: "Delete failed"
+    check_email: "Hãy kiểm tra email của bạn để kích hoạt tài khoản."
+    activate:
+      success: "Account activated!"
+      fail: "Invalid activation link"
+  user_mailer:
+    activate: "Kích hoạt"
+    greeting: "Hi %name,"
+    subject: "Account activation"
+    intro: "Welcome to the Sample App! Click on the link below to activate your account:"
+    heading: "Sample App"
