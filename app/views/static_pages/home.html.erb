@@ -3,6 +3,7 @@
   <h1>
     <%= t ".heading" %>
   </h1>
+  <%= link_to t(".sign_up"), new_user_path, class: "btn btn-lg btn-primary" %>
   <p>
     <%= t ".before_tutorial" %>
     <%= link_to t(".tutorial"), Settings.home_link %>.
