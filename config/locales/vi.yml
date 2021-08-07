@@ -28,6 +28,7 @@ vi:
     application:
       title: "Ruby on Rails Tutorial Sample App"
     header:
+      user_title: "Users"
       logo: "sample app"
     footer:
       the: ""
@@ -51,9 +52,26 @@ vi:
         submit: "Tạo tài khoản"
     login:
       title: "Đăng nhập"
+    logout:
+      title: "Logout"
+    profile:
+      title: "Profile"
+    settings:
+      title: "Settings"
     helper:
       gravatar_link: "https://secure.gravatar.com/avatar/%{gravatar_id}.jpg"
   messsage:
     not_found: "Not found"
     user_create_success: "Create user success"
     user_create_faild: "Create user failed"
+  sessions:
+    label:
+      email: "Email"
+      password: "Mật khẩu"
+    button:
+      login: "Đăng nhập"
+    heading: "Đăng nhập"
+    title: "Đăng nhập"
+    message:
+      login_failed: "Invalid email/password combination"
+      login_success: "Welcome to the Sample App"
