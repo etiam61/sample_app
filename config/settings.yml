@@ -20,8 +20,15 @@ model:
 max_item_per_page: 30
 image:
   avatar_size: 50
-pagination:
+  image_micropost_size: [100, 100]
+  type: ["image/jpeg", "image/gif", "image/png", "image/jpg"]
+  size: 5
+  size_in_megabytes: 1024
+page:
   per: 30
 time_expire:
   hours:
     ago: 2
+content:
+  length:
+    max: 140
