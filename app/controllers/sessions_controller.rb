@@ -27,7 +27,7 @@ class SessionsController < ApplicationController
 
   def login_activated_user user, remember_value
     if user.activated
-      login_user user, remember_value
+      login user, remember_value
       redirect_back_or user
     else
       flash[:warning] = t "message.not_active"

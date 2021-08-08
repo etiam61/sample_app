@@ -1,0 +1,10 @@
+<% provide :title, t(".page_title") %>
+<div class="page page__password-reset">
+  <h1><%= t ".heading" %></h1>
+  <%= form_for :password_reset, url: password_resets_path do |f| %>
+    <%= f.label :email, t(".email") %>
+    <%= f.email_field :email, class: "form-item" %>
+    <br>
+    <%= f.submit t(".submit_text"), class: "btn btn-primary" %>
+  <% end %>
+</div>
