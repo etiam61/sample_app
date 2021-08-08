@@ -162,3 +162,12 @@ vi:
     feed:
       feed_title: "Micropost Feed"
       message_limit: "Maximum file size is 5MB. Please choose a smaller file."
+  follow:
+    following: "Following"
+    followers: "Followers"
+    follow: "Follow"
+    unfollow: "Unfollow"
+    follow_success: "Follow success"
+    follow_fail: "Follow fail"
+    unfollow_success: "Unfollow success"
+    unfollow_fail: "Unfollow fail"

@@ -13,13 +13,7 @@ User.create!( name:"Admin",
               activated: true,
               activated_at: Time.zone.now
               )
-users = User.order(:created_at).take(6)
-50.times do 
-  content = Faker::Lorem.sentence word_count:5 
-  users.each do |user|
-    user.microposts.create! content: content 
-  end
-end
+
 # Generate a bunch of additional users.
 99.times do |n|
   name = Faker::Name.name
@@ -33,3 +27,19 @@ end
                 activated_at: Time.zone.now
                 )
 end
+
+users = User.order(:created_at).take(10)
+4.times do 
+  content = Faker::Lorem.sentence word_count:5 
+  users.each do |user|
+    user.microposts.create! content: content 
+  end
+end
+
+# Following relationships
+users = User.all
+user = users.first
+following = users[2..20]
+followers = users[3..15]
+following.each{|followed| user.follow(followed)}
+followers.each{|follower| follower.follow(user)}
