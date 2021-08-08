@@ -1,66 +1,39 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
   static_pages:
     home:
       title: "Home"
-      heading: "Simple App"
-      before_tutorial: "This is the home page for the"
-      tutorial: "Ruby on Rails Tutorial"
-      after_tutorial: "sample application"
+      heading: "Sample App"
+      before_tutorial: "This is Home page"
+      tutorial: "Ruby on Rails turtorial"
+      after_tutorial: "Sample App"
+      sing_up: "Sign Up"
     help:
-      title: "Help"
-      heading: "Help"
-      before_page_link: "Get help on the Ruby on Rails Tutorial at the"
-      page_link: "Rails Tutorial help page"
-      before_book_link: "To get help on this sample app, see the"
-      book_link: "Ruby on Rails Tutorial book."
+      title: "Helps"
+      heading: "Helps"
+      before_page_link: "get helps of Ruby on Rails from"
+      page_link: "Rails Tutorial home page"
+      before_book_link: "get helps"
+      book_link: "Ruby on Rails Tutorial Book."
     contact:
+      page_title: "Contact"
       heading: "Contact"
-      intro: "Contact the Ruby on Rails Tutorial about the sample app at the"
-      title: "contact page"
+      intro: "Contact Ruby on Rails Tutorial"
+      title: "Contact"
     about:
+      page_title: "About"
       heading: "About"
-      intro: "About the sample app at the"
-      title: "about page"
+      intro: "About for sample app here"
+      title: "About"
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
     header:
+      user_title: "Users"
       logo: "sample app"
     footer:
-      the: "The"
+      the: ""
       rails_name: "Ruby on Rails Tutorial" 
-      by: "by"
+      by: "By"
       rails_author: "Michael Hartl"
       news: "News"
       about: "About"
@@ -69,6 +42,11 @@ en:
     index:
       page_title: "All Users"
       heading: "All Users"
+    user:
+      sure: "Are you sure ?"
+      button: "Delete"
+    show:
+      count: "Microposts"
     new:
       page_title: "Sign up"
       heading: "Sign up"
@@ -77,23 +55,20 @@ en:
         name: "Name"
         email: "Email"
         password: "Password"
-        comfirmation: "Confirmation"
+        comfirmation: "Comfirmation"
       button:
-        submit: "Create my account"
+        submit: "Sign up"
     edit:
-      page_title: "Sign up"
-      heading: "Sign up"
-      intro: "This will be a sign up page for new users."
+      page_title: "Edit"
+      heading: "Edit profile"
+      intro: "Edit profile of user"
       button:
-        submit: "Create my account"
-      message:
-        update_failed: "Edit failed"
-        update_success: "Edit ok"
+        submit: "Edit"
     form:
-      name: "Tên của bản"
-      email: "Địa chỉ email"
-      password: "Mật khẩu"
-      password_confirm: "Nhập lại mật khẩu"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirm: "Confirmation"
     login:
       title: "Login"
     logout:
@@ -104,15 +79,20 @@ en:
       title: "Settings"
     helper:
       gravatar_link: "https://secure.gravatar.com/avatar/%{gravatar_id}.jpg"
+  messsage:
+    not_found: "Not found"
+    user_create_success: "Create user success"
+    user_create_faild: "Create user failed"
   sessions:
-    label:
-      email: "Email"
-      password: "Mật khẩu"
-    button:
-      login: "Đăng nhập"
-    heading: "Đăng nhập"
-    title: "Đăng nhập"
-    remember_text: "Remember me"
+    new:
+      label:
+        email: "Email"
+        password: "Password"
+      button:
+        login: "Login"
+      heading: "Login"
+      title: "Login"
+      remember_text: "Remember me"
     message:
       login_failed: "Invalid email/password combination"
       login_success: "Welcome to the Sample App"
@@ -120,16 +100,73 @@ en:
     update_failed: "Edit failed"
     update_success: "Edit ok"
     login_required: "Please login"
-    not_active: "Not active"
     delete_success: "Delete success"
-    delete_success: "Delete failed"
-    check_email: "Hãy kiểm tra email của bạn để kích hoạt tài khoản."
+    not_active: "Not active"
+    delete_success: "Delete success!"
+    check_email: "Check email to active account."
     activate:
       success: "Account activated!"
       fail: "Invalid activation link"
   user_mailer:
-    activate: "Kích hoạt"
-    greeting: "Hi %name,"
-    subject: "Account activation"
-    intro: "Welcome to the Sample App! Click on the link below to activate your account:"
-    heading: "Sample App"
+    account_activation:
+      activate: "Active"
+      greeting: "Hi %{name},"
+      subject: "Account activation"
+      intro: "Welcome to the Sample App! Click on the link below to activate your account:"
+      heading: "Sample App"
+    password_reset:
+      greeting: "To reset your password click the link below:"
+      subject: "Password Reset"
+      notice: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+      app_name: "Sample App"
+  password_resets:
+    new:
+      page_title: "Forgot password"
+      heading: "Forgot password"
+      submit_text: "Submit"
+      email: "Email Address"
+    edit:
+      page_title: "Reset password"
+      heading: "Reset password"
+      submit_text: "Update password"
+      password: "Password"
+      password_confirm: "Confirm Password"
+    message:
+      send_email: "Email sent with password reset instructions"
+      email_wrong: "Email address not found"
+      expired: "Password reset has expired."
+      password_blank: "can't be empty"
+      success: "Password has been reset."
+      fail: "Password resets fail"
+  microposts:
+    micropost:
+      time_ago: "Posted %{time} ago."
+      delete: "Delete"
+      data_confirm: "Are you sure?"
+    message:
+      login_require: "Please log in"
+      create_success: "Micropost created!"
+      create_fail: "Create fail!"
+      delete_success: "Micropost deleted"
+      delete_fail: "Delete fail"
+      valid_format_image: "must be a valid image format"
+      image_size_warning: "Maximum file size is 5MB. Please choose a smaller file."
+      not_correct: "Not correct user"
+  shared:
+    error_messages:
+      show_error_number: "The form contains %{error_number} error"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      submit_text: "Post"
+    feed:
+      feed_title: "Micropost Feed"
+      message_limit: "Maximum file size is 5MB. Please choose a smaller file."
+  follow:
+    following: "Following"
+    followers: "Followers"
+    follow: "Follow"
+    unfollow: "Unfollow"
+    follow_success: "Follow success"
+    follow_fail: "Follow fail"
+    unfollow_success: "Unfollow success"
+    unfollow_fail: "Unfollow fail"

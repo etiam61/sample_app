@@ -42,8 +42,6 @@ yarn-debug.log*
 .framgia-ci-result.temp.yml
 .editorconfig
 config/database.yml
-/Gemfile.lock
-/app/assets/images
 /test
 
 # Ignore application configuration

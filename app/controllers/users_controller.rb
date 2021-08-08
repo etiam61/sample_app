@@ -20,10 +20,10 @@ class UsersController < ApplicationController
     @user = User.new user_params
     if @user.save
       @user.send_activation_email
-      flash[:info] = t ".message.check_email"
+      flash[:info] = t "message.check_email"
       redirect_to login_url
     else
-      flash[:danger] = t ".message.user_create_failed"
+      flash[:danger] = t "message.user_create_failed"
       render :new
     end
   end
@@ -32,17 +32,17 @@ class UsersController < ApplicationController
 
   def update
     if @user.update user_params
-      flash[:success] = t ".message.update_success"
+      flash[:success] = t "message.update_success"
       redirect_to @user
     else
-      flash[:danger] = t ".message.update_failed"
+      flash[:danger] = t "message.update_failed"
       render :edit
     end
   end
 
   def destroy
     if @user.destroy
-      flash[:success] = t ".message.delete_success"
+      flash[:success] = t "message.delete_success"
     else
       flash[:danger] = t ".message.delete_failed"
     end
@@ -61,13 +61,5 @@ class UsersController < ApplicationController
   # Confirms an admin user.
   def admin_user
     redirect_to root_url unless current_user.admin?
-  end
-
-  def find_user
-    @user = User.find_by id: params[:id]
-    return if @user
-
-    flash[:danger] = t "users.index.not_found"
-    redirect_to root_path
   end
 end

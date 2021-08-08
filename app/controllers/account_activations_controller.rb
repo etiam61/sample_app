@@ -5,7 +5,7 @@ class AccountActivationsController < ApplicationController
       activate_user user
       redirect_to user
     else
-      flash[:danger] = t ".message.active.fail"
+      flash[:danger] = t "message.active.fail"
       redirect_to root_url
     end
   end
@@ -14,6 +14,6 @@ class AccountActivationsController < ApplicationController
   def activate_user user
     user.activate
     log_in user
-    flash[:success] = t ".message.activate.success"
+    flash[:success] = t "message.activate.success"
   end
 end
