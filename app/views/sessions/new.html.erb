@@ -8,7 +8,11 @@
     <%= f.email_field :email, class: "form-item" %>
     <%= f.label :password, t(".label.password") %>
     <%= f.password_field :password, class: "form-item" %>
-    <%= f.submit t(".button.login"), class: "btn btn-primary" %>
+    <%= f.label :remember_me, class: "checkbox inline" do %>
+      <%= f.check_box :remember_me %>
+      <span><%= t ".remember_text" %></span>
+     <% end %>
+    <%= f.submit t(".login"), class: "btn btn-primary" %>
   <% end %>
   <br>
   <%= link_to t("static_page.home.sign_up") ,  new_user_path %>
