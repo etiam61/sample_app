@@ -17,10 +17,11 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      flash[:success] = t ".message.user_create_success"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t ".message.check_email"
+      redirect_to login_url
     else
-      flash[:danger] = ".message.user_create_failed"
+      flash[:danger] = t ".message.user_create_failed"
       render :new
     end
   end

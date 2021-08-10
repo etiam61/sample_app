@@ -98,4 +98,17 @@ vi:
     update_success: "Edit ok"
     login_required: "Please login"
     delete_success: "Delete success"
+    not_active: "Not active"
     delete_success: "Delete failed"
+    check_email: "Hãy kiểm tra email của bạn để kích hoạt tài khoản."
+    activate:
+      success: "Account activated!"
+      fail: "Invalid activation link"
+  user_mailer:
+    account_activation:
+      activate: "Kích hoạt"
+      greeting: "Hi %name,"
+      intro: "Welcome to the Sample App! Click on the link below to activate your account:"
+      heading: "Sample App"
+  mail:
+    subject: "Account activation"
