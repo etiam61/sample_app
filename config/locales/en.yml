@@ -66,6 +66,9 @@ en:
       about: "About"
       contact: "Contact"
   users:
+    index:
+      page_title: "All Users"
+      heading: "All Users"
     new:
       page_title: "Sign up"
       heading: "Sign up"
@@ -77,6 +80,20 @@ en:
         comfirmation: "Confirmation"
       button:
         submit: "Create my account"
+    edit:
+      page_title: "Sign up"
+      heading: "Sign up"
+      intro: "This will be a sign up page for new users."
+      button:
+        submit: "Create my account"
+      message:
+        update_failed: "Edit failed"
+        update_success: "Edit ok"
+    form:
+      name: "Tên của bản"
+      email: "Địa chỉ email"
+      password: "Mật khẩu"
+      password_confirm: "Nhập lại mật khẩu"
     login:
       title: "Login"
     logout:
@@ -99,3 +116,9 @@ en:
     message:
       login_failed: "Invalid email/password combination"
       login_success: "Welcome to the Sample App"
+  message:
+    update_failed: "Edit failed"
+    update_success: "Edit ok"
+    login_required: "Please login"
+    delete_success: "Delete success"
+    delete_success: "Delete failed"

@@ -39,6 +39,12 @@ vi:
       about: "Tìm hiểu"
       contact: "Liên lạc"
   users:
+    index:
+      page_title: "All Users"
+      heading: "All Users"
+    user:
+      sure: "Are you sure ?"
+      button: "Delete"
     new:
       page_title: "Sign up"
       heading: "Sign up"
@@ -50,6 +56,17 @@ vi:
         comfirmation: "Xác nhận"
       button:
         submit: "Tạo tài khoản"
+    edit:
+      page_title: "Sign up"
+      heading: "Sign up"
+      intro: "This will be a sign up page for new users."
+      button:
+        submit: "Tạo tài khoản"
+    form:
+      name: "Tên của bản"
+      email: "Địa chỉ email"
+      password: "Mật khẩu"
+      password_confirm: "Nhập lại mật khẩu"
     login:
       title: "Đăng nhập"
     logout:
@@ -76,3 +93,9 @@ vi:
     message:
       login_failed: "Invalid email/password combination"
       login_success: "Welcome to the Sample App"
+  message:
+    update_failed: "Edit failed"
+    update_success: "Edit ok"
+    login_required: "Please login"
+    delete_success: "Delete success"
+    delete_success: "Delete failed"

@@ -3,8 +3,11 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.6.6"
 gem "bcrypt", "~> 3.1"
+gem "bootstrap-kaminari-views"
 gem "bootstrap-sass", "~> 3.4"
 gem "config"
+gem "faker"
+gem "kaminari"
 gem "mysql2", "~> 0.5"
 gem "rails-i18n"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
