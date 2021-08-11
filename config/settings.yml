@@ -22,3 +22,6 @@ image:
   avatar_size: 50
 pagination:
   per: 30
+time_expire:
+  hours:
+    ago: 2
