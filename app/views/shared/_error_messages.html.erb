@@ -1,10 +1,10 @@
-<% if @user.errors.any? %>
+<% if object.errors.any? %>
   <div id="error-desc">
     <div class="alert alert-danger">
-      <%= t ".show_error_number", error_number: @user.errors.count %>
+      <%= t ".show_error_number", error_number: object.errors.count %>
     </div>
     <ul>
-      <% @user.errors.messages.each do |attribute, message| %>
+      <% object.errors.messages.each do |attribute, message| %>
         <li><%= "#{attribute.to_s.capitalize}: #{message[0]}" %></li>
       <% end %>
     </ul>

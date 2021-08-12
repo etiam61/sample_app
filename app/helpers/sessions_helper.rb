@@ -49,4 +49,12 @@ module SessionsHelper
     redirect_to(session[:forwarding_url] || default)
     session.delete :forwarding_url
   end
+
+  def logged_in_user
+    return if logged_in?
+
+    store_location
+    flash[:danger] = t "microposts.message.login_require"
+    redirect_to login_path
+  end
 end

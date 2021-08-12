@@ -11,7 +11,7 @@ class PasswordResetsController < ApplicationController
       @user.send_password_reset_email
       flash[:info] = t ".message.send_email"
       redirect_to root_url
-    else 
+    else
       flash[:danger] = t "password_resets.message.fail"
       render :new
     end
@@ -37,11 +37,13 @@ class PasswordResetsController < ApplicationController
   def load_user
     @user = User.find_by email: params[:email].downcase
     return if @user&.activated
+
     redirect_root_error
   end
 
   def valid_user
     return if @user.authenticated? :reset, params[:id]
+
     redirect_root_error
   end
 

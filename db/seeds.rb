@@ -13,6 +13,13 @@ User.create!( name:"Admin",
               activated: true,
               activated_at: Time.zone.now
               )
+users = User.order(:created_at).take(6)
+50.times do 
+  content = Faker::Lorem.sentence word_count:5 
+  users.each do |user|
+    user.microposts.create! content: content 
+  end
+end
 # Generate a bunch of additional users.
 99.times do |n|
   name = Faker::Name.name
